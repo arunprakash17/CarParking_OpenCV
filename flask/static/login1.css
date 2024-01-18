@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding:0;
+    box-shadow: border-box;
+    overflow-x: hidden;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    height:100vh;
+    width:100vw;
+    font-family: 'Poppins',sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(151, 3, 3);
+    height:60px;
+    width:100%;
+    z-index: 100;
+    overflow:hidden;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+h2{
+    color:white;
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+    padding-left:10px;
+}
+nav li a{
+    text-decoration: none;
+    color:white;
+    font-size: 1.2rem;
+}
+nav li{
+    list-style: none;
+    padding:18px 30px;
+}
+nav li:hover{
+    background-color: red;
+}
+#box{
+    width:100vw;
+    height:100vh;
+    padding-top:50px;
+}
+.login{
+    background-image: url('/static/image/login.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.register{
+    background-image: url('/static/image/login.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display:none;
+    justify-content: center;
+    align-items: center;
+}
+
+.main h1{
+    font-size: 4rem;
+    z-index: 100;
+    color:rgb(243, 247, 7);
+    text-transform: uppercase;
+}
+form{
+    min-height:350px;
+    width:440px;
+    background:white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+}
+form .title{
+    color:black;
+    font-size:1.5rem;
+    text-align: center;
+    padding-top:15px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.one{
+    font-size:1.5rem;
+}
+.two{
+    font-size:0.8rem;
+    padding:10px;
+}
+.form-group{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding:10px;
+    font-size: .9rem;
+    font-weight: bolder;
+    line-height: 20px;
+}
+input[type='text'],input[type='email'],input[type='password']{
+    height:30px;
+    padding:5px;
+    color:blue;
+    font-size: 1rem;
+    border-radius: 6px;
+    outline:none;
+}
+input[type='submit']{
+    text-align: center;
+    margin-top: 15px;
+    background-color:blue;
+    color:white;
+    padding:10px;
+    border-radius: 10px;
+}
+.msg{
+    min-height:30px;
+    text-align:center;
+    color:red;
+    font-weight:bolder;
+}
+.create{
+    font-size:0.5rem;
+}
+.create a{
+    color:red;
+}
+.log.active,.reg.active{
+    background-color: red;
+}

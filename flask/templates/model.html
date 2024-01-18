@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Parking</title>
+    <link rel=stylesheet href="{{url_for('static',filename='model1.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <script>
+        function video(){
+            const btn = document.querySelector('.k');
+            const box = document.querySelector('.box');
+            const home = document.querySelector('.home');
+            home.style.backgroundImage = "url('')";
+            home.style.backgroundColor ="black";
+            btn.style.display = 'flex';
+            box.style.display = 'none';
+        }
+    </script>
+    <header>
+        <h2>AI Enabled Car Parking Using OpenCV</h2>
+        <nav>
+            <li><a href="http://127.0.0.1:5000">Home</a></li>
+            <li class='live'><a href="http://127.0.0.1:5000/predict_live">Models</a></li>
+            <li><a href="http://127.0.0.1:5000/login">Logout</a></li>
+        </nav>
+    </header>
+    <div class="home">
+         <div  class = "k">
+                 <img src = {{url_for('generate')}}>
+          </div>
+        <div class="box">
+            <p class="two">Check the Parking Slot</p>
+            <a class='btn' href="#" onclick="video()">Click Me</a>
+        </div>
+    </div>
+</body>
+</html>

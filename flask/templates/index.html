@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="{{url_for('static',filename='index1.css')}}">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Roboto&display=swap" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body>
+   
+    <header>
+        <h2>SHPVIBE</h2>
+        <nav>
+            <li class='link active'><a href="#home" onclick=page('h')>Home</a></li>
+            <li class='link'><a href="#about" class="about" onclick=page('a')>About Us</a></li>
+            <li class='link'><a href="http://127.0.0.1:5000/login">Login</a></li>
+            <li><a href="http://127.0.0.1:5000/login">Register</a></li>
+            <li><a href="http://127.0.0.1:5000/login">Contact</a></li>
+        </nav>
+    </header>
+    <section id="home" class="home">
+       <div class="content">
+            <div class="content1">
+                <h1 class="head1">REVOLUTIONZING PARKING</h1>
+                <h3 class="head2">AI Enabled Car Parking Using OpenCV</h3>
+                <button class="btn">Get Started</button>
+            </div>
+       </div>
+    </section>
+    <section id="about" class="about">
+        <div class="box">
+           <h2 class="heading">ABOUT</h2>
+            <div class="innerbox">
+                <div class="text">
+                    <h2>AI Enabled Car Parking Using OpenCV</h2>
+                    <p> The Al-Enabled Car Parking System Utilizing OpenCV Technology is a cutting-edge project that aims to revolutionize the way parking lots operate. This system uses OpenCV, a popular computer vision library, to enable vehicles to park autonomously.<br><br></p>
+                    <p> <sub><img src="{{url_for('static',filename='/image/icon2.png')}}" class="icon"></sub> OpenCV library analyzes the footage and identifies the available parking spaces in the lot.<br><br></p>
+                    <p><sub><img src="{{url_for('static',filename='/image/icon2.png')}}" class="icon"></sub>The system is designed to be highly accurate, and it can detect small and large vehicles, even in low-light conditions.</p>
+                </div>
+                <div class="image"><img src="{{url_for('static',filename='/image/about.jpg')}}" alt=""></div>
+            </div>
+         </div>
+    </section>
+    <a class="top" href="#home">TOP</a>
+    
+</body>
+</html>
