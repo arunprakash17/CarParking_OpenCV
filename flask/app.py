@@ -137,7 +137,6 @@ def login1():
 
 @app.route('/predict_live')
 def generate():
-    print("hello")
     return Response(live_pred(),mimetype='multipart/x-mixed-replace;boundary=frame')
 
 if __name__ =="__main__":
