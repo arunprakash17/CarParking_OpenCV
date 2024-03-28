@@ -1,4 +1,3 @@
-
 from flask import Flask, render_template, request,Response
 import cv2
 import pickle
